@@ -4,6 +4,19 @@
 
 <web-app>
 	<display-name>Fb Webhook in java</display-name>
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webXml>WebContent\WEB-INF\web.xml</webXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
 	<servlet>
 		<servlet-name>WebHookServlet</servlet-name>
 		<servlet-class>in.strollup.fb.servlet.WebHookServlet</servlet-class>
