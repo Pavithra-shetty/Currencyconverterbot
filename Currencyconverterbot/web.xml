@@ -15,7 +15,6 @@
             </plugin>
         </plugins>
     </build>
-</project>
 
 	<servlet>
 		<servlet-name>WebHookServlet</servlet-name>
